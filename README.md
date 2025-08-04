@@ -1,2 +1,2 @@
-# Exercicios
+# Pet-shop
 Montando um banho e tosa em um pet-shop
