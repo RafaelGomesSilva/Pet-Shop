@@ -1,9 +1,11 @@
 public class Main {
     private final static scanner = new Scanner(System.in);
+
     private final static PetMachine petMachine = new PetMachine();
 
 
     public static void main(String[] args) {
+        scanner.useDelimiter(""//n");
 
         var option = -1;
         do {
@@ -21,13 +23,47 @@ public class Main {
             option = scanner.nextInt();
             switch (option){
             }
+                case 1 -> petMachine.takeAShower();
+                case 2 -> setWater();
+                case 3 -> setShampoo();
+                case 4 -> verifyWater();
+                case 5 -> verifyShampoo();
                 case 6 -> petMachine.hasPet();
                 case 7 -> setPetInPetMachine();
                 case 8 ->petMachine.removePet();
                 case 9 -> petMachine.wash();
+                case 0 -> System.exit();
+                default -> System.out.println("Opção inválida")
             }
         }while (option !=0);
     }
+    private static void setWater(){
+    System.out.pintln("Tentando colocar água a máquina");
+    pet.Machine.addWater();
+
+    }
+
+        }
+    private static void setShampoo(){
+    System.out.pintln("Tentando colocar shampoo na máquina");
+    pet.Machine.addShampoo();
+    }
+
+    private static void verifyWater(){
+    var amount petMachine.getWater();
+    System.out.println("A máquina esta no momento com " + amout  "Litro(s) de shampoo");
+
+    private static void verifyShampoo(){
+        var amount petMachine.getShampoo();
+        System.out.println("A máquina esta no momento com " + amout  "Litro(s) de shampoo");
+    }
+
+
+    private static void checkIfHasPetInMachine(){
+    var hasPet petMachine.hasPet();
+    System.out.println(hasPet ? "Tem pet na máquina" : "Não tem pet na máquina");
+    }
+
     public static void setPetInPetMachine(){
         var name = "";
         while (name == null || name.isEmpty()){
@@ -38,5 +74,5 @@ public class Main {
 
         var pet = new Pet(name);
         petMachine.setPet(pet);
-        System.out.println("O pet" + pet.getName() + "Foi colocado na máquina");
+        System.out.println(" O pet " + pet.getName() + "Foi colocado na máquina");
 }

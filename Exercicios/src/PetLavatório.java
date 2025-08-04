@@ -68,7 +68,7 @@ public class PetLavatório {
         this.pet = pet;
     public void removePet(){
         this.clean = this.pet.isClean();
-        System.out.println("O Pet" + this.pet.getName() + "Está Limpinho");
+        System.out.println("O Pet" + this.pet.getName() + "Foi retirado da máquina");
         this.pet = null;
     }
 
